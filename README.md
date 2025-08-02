@@ -11,9 +11,6 @@
 
 4. [Quick Start](#quick-start)
 
-5. [Assets](#links)
-
-
 ## <a name="introduction">🤖 Introduction</a>
 
 Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app leverages modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.
@@ -93,13 +90,17 @@ EXPO_PUBLIC_APPWRITE_PROJECT_ID=
 EXPO_PUBLIC_APPWRITE_DATABASE_ID=
 
 EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
-
-
-
 ```
 
 Replace the placeholder values with your actual TMDB API key, Appwrite project ID, Database ID, and Collection ID. You can obtain these credentials by signing up on the [Appwrite](https://cloud.appwrite.io/console/login), [TMDB](https://www.themoviedb.org/login).
 
+Create a a file named `expo-env.d.ts` in root of directory and paste the below content there:
+
+```ts
+/// <reference types="expo/types" />
+
+// NOTE: This file should not be edited and should be in your gitignore
+```
 **Running the Project**
 
 ```bash
@@ -110,6 +111,3 @@ npx expo start
 
 Open your ExpoGO app on your phone and scan the QR code to view the project.
 
-## <a name="links">🔗 Assets</a>
-
-- Assets used in the project can be found [here](https://drive.google.com/file/d/1_8eNj07rNS7B-JyCZ-lj1GtRYG03Ye-M/view)
